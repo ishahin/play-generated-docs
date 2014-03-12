@@ -938,6 +938,11 @@
 <dd>
 <div class="block">Decrypt a String with the AES encryption standard.</div>
 </dd>
+<dt><span class="strong"><a href="./play/libs/HttpExecution.html#defaultContext()">defaultContext()</a></span> - Static method in class play.libs.<a href="./play/libs/HttpExecution.html" title="class in play.libs">HttpExecution</a></dt>
+<dd>
+<div class="block">An ExecutionContext that executes work on the application's internal
+ ActorSystem dispatcher.</div>
+</dd>
 <dt><span class="strong"><a href="./play/mvc/Action.html#delegate">delegate</a></span> - Variable in class play.mvc.<a href="./play/mvc/Action.html" title="class in play.mvc">Action</a></dt>
 <dd>
 <div class="block">The wrapped action.</div>
@@ -1192,10 +1197,6 @@
 <dd>
 <div class="block">Create a new promise wrapping the given Scala promise</div>
 </dd>
-<dt><a href="./play/libs/F.Promise.PromiseActor.html" title="class in play.libs"><span class="strong">F.Promise.PromiseActor</span></a> - Class in <a href="./play/libs/package-summary.html">play.libs</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="strong"><a href="./play/libs/F.Promise.PromiseActor.html#F.Promise.PromiseActor()">F.Promise.PromiseActor()</a></span> - Constructor for class play.libs.<a href="./play/libs/F.Promise.PromiseActor.html" title="class in play.libs">F.Promise.PromiseActor</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="./play/libs/F.Some.html" title="class in play.libs"><span class="strong">F.Some</span></a>&lt;<a href="./play/libs/F.Some.html" title="type parameter in F.Some">T</a>&gt; - Class in <a href="./play/libs/package-summary.html">play.libs</a></dt>
 <dd>
 <div class="block">Represents existing values of type <code>T</code>.</div>
@@ -1597,6 +1598,10 @@
 <dt><span class="strong"><a href="./play/libs/XML.html#fromString(java.lang.String)">fromString(String)</a></span> - Static method in class play.libs.<a href="./play/libs/XML.html" title="class in play.libs">XML</a></dt>
 <dd>
 <div class="block">Parse an XML string as DOM.</div>
+</dd>
+<dt><span class="strong"><a href="./play/libs/HttpExecution.html#fromThread(scala.concurrent.ExecutionContext)">fromThread(ExecutionContext)</a></span> - Static method in class play.libs.<a href="./play/libs/HttpExecution.html" title="class in play.libs">HttpExecution</a></dt>
+<dd>
+<div class="block">An ExecutionContext that executes work on the given ExecutionContext.</div>
 </dd>
 <dt><span class="strong"><a href="./play/libs/Akka.html#future(java.util.concurrent.Callable)">future(Callable&lt;T&gt;)</a></span> - Static method in class play.libs.<a href="./play/libs/Akka.html" title="class in play.libs">Akka</a></dt>
 <dd>
@@ -2287,6 +2292,13 @@
 <div class="block">Defines all standard HTTP status codes.</div>
 </dd>
 <dt><span class="strong"><a href="./play/mvc/Http.Status.html#HTTP_VERSION_NOT_SUPPORTED">HTTP_VERSION_NOT_SUPPORTED</a></span> - Static variable in interface play.mvc.<a href="./play/mvc/Http.Status.html" title="interface in play.mvc">Http.Status</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="./play/libs/HttpExecution.html" title="class in play.libs"><span class="strong">HttpExecution</span></a> - Class in <a href="./play/libs/package-summary.html">play.libs</a></dt>
+<dd>
+<div class="block">ExecutionContexts that preserve the current thread's context ClassLoader and
+ Http.Context.</div>
+</dd>
+<dt><span class="strong"><a href="./play/libs/HttpExecution.html#HttpExecution()">HttpExecution()</a></span> - Constructor for class play.libs.<a href="./play/libs/HttpExecution.html" title="class in play.libs">HttpExecution</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="strong"><a href="./play/mvc/Http.Cookie.html#httpOnly()">httpOnly()</a></span> - Method in class play.mvc.<a href="./play/mvc/Http.Cookie.html" title="class in play.mvc">Http.Cookie</a></dt>
 <dd>&nbsp;</dd>
@@ -3061,8 +3073,6 @@
 <dd>
 <div class="block">Called when the WebSocket is ready</div>
 </dd>
-<dt><span class="strong"><a href="./play/libs/F.Promise.PromiseActor.html#onReceive(java.lang.Object)">onReceive(Object)</a></span> - Method in class play.libs.<a href="./play/libs/F.Promise.PromiseActor.html" title="class in play.libs">F.Promise.PromiseActor</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="strong"><a href="./play/libs/F.Promise.html#onRedeem(play.libs.F.Callback)">onRedeem(F.Callback&lt;A&gt;)</a></span> - Method in class play.libs.<a href="./play/libs/F.Promise.html" title="class in play.libs">F.Promise</a></dt>
 <dd>
 <div class="block">Perform the given <code>action</code> callback when the Promise is redeemed.</div>
@@ -3144,6 +3154,11 @@
 <dt><span class="strong"><a href="./play/db/ebean/Model.Finder.html#orderBy(java.lang.String)">orderBy(String)</a></span> - Method in class play.db.ebean.<a href="./play/db/ebean/Model.Finder.html" title="class in play.db.ebean">Model.Finder</a></dt>
 <dd>
 <div class="block">Set the <code>order by</code> clause replacing the existing <code>order by</code> clause if there is one.</div>
+</dd>
+<dt><span class="strong"><a href="./play/libs/HttpExecution.html#orderedContext()">orderedContext()</a></span> - Static method in class play.libs.<a href="./play/libs/HttpExecution.html" title="class in play.libs">HttpExecution</a></dt>
+<dd>
+<div class="block">An ExecutionContext that executes work for a given Http.Context in the
+ same actor each time, ensuring ordered execution of that work.</div>
 </dd>
 <dt><span class="strong"><a href="./play/libs/Scala.html#orElse(scala.Option, T)">orElse(Option&lt;T&gt;, T)</a></span> - Static method in class play.libs.<a href="./play/libs/Scala.html" title="class in play.libs">Scala</a></dt>
 <dd>
@@ -3580,7 +3595,9 @@
 <dt><span class="strong"><a href="./play/mvc/Http.Status.html#RESET_CONTENT">RESET_CONTENT</a></span> - Static variable in interface play.mvc.<a href="./play/mvc/Http.Status.html" title="interface in play.mvc">Http.Status</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="strong"><a href="./play/libs/F.Promise.html#resetActors()">resetActors()</a></span> - Static method in class play.libs.<a href="./play/libs/F.Promise.html" title="class in play.libs">F.Promise</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="strong">Deprecated.</span></div>
+</dd>
 <dt><span class="strong"><a href="./play/Application.html#resource(java.lang.String)">resource(String)</a></span> - Method in class play.<a href="./play/Application.html" title="class in play">Application</a></dt>
 <dd>
 <div class="block">Retrieves a resource from the classpath.</div>

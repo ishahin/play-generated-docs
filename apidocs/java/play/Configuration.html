@@ -1,0 +1,1465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Configuration (playframework)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Configuration (playframework)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../play/Application.html" title="class in play"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../play/GlobalSettings.html" title="class in play"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?play/Configuration.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Configuration.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+play</FONT>
+<BR>
+Class Configuration</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../resources/inherit.gif" ALT="extended by "><B>play.Configuration</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Configuration</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+The current application configuration.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../play/Configuration.html#Configuration(com.typesafe.config.Config)">Configuration</A></B>(com.typesafe.config.Config&nbsp;conf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new configuration from a Typesafe Config object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../play/Configuration.html#Configuration(play.api.Configuration)">Configuration</A></B>(play.api.Configuration&nbsp;conf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new configuration from a Scala-based configuration.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#asMap()">asMap</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the config as a map of plain old Java maps, lists and values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Set&lt;java.util.Map.Entry&lt;java.lang.String,com.typesafe.config.ConfigValue&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#entrySet()">entrySet</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the config as a set of full paths to config values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBoolean(java.lang.String)">getBoolean</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Boolean</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBoolean(java.lang.String, java.lang.Boolean)">getBoolean</A></B>(java.lang.String&nbsp;key,
+           java.lang.Boolean&nbsp;defaultBoolean)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Boolean</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Boolean&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBooleanList(java.lang.String)">getBooleanList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Boolean&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Boolean&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBooleanList(java.lang.String, java.util.List)">getBooleanList</A></B>(java.lang.String&nbsp;key,
+               java.util.List&lt;java.lang.Boolean&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Boolean&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBytes(java.lang.String)">getBytes</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Bytes</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBytes(java.lang.String, java.lang.Long)">getBytes</A></B>(java.lang.String&nbsp;key,
+         java.lang.Long&nbsp;defaultBytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Bytes</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBytesList(java.lang.String)">getBytesList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getBytesList(java.lang.String, java.util.List)">getBytesList</A></B>(java.lang.String&nbsp;key,
+             java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../play/Configuration.html" title="class in play">Configuration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getConfig(java.lang.String)">getConfig</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a sub-configuration, which is a configuration instance containing all keys that start with the given prefix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getConfigList(java.lang.String)">getConfigList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Configuration&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getConfigList(java.lang.String, java.util.List)">getConfigList</A></B>(java.lang.String&nbsp;key,
+              java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Configuration&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getDouble(java.lang.String)">getDouble</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Double</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getDouble(java.lang.String, java.lang.Double)">getDouble</A></B>(java.lang.String&nbsp;key,
+          java.lang.Double&nbsp;defaultDouble)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Double</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Double&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getDoubleList(java.lang.String)">getDoubleList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Double&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Double&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getDoubleList(java.lang.String, java.util.List)">getDoubleList</A></B>(java.lang.String&nbsp;key,
+              java.util.List&lt;java.lang.Double&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Double&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Integer</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getInt(java.lang.String)">getInt</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Int</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Integer</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getInt(java.lang.String, java.lang.Integer)">getInt</A></B>(java.lang.String&nbsp;key,
+       java.lang.Integer&nbsp;defaultInteger)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Int</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Integer&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getIntList(java.lang.String)">getIntList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Integer&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Integer&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getIntList(java.lang.String, java.util.List)">getIntList</A></B>(java.lang.String&nbsp;key,
+           java.util.List&lt;java.lang.Integer&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Integer&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Object&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getList(java.lang.String)">getList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Object&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Object&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getList(java.lang.String, java.util.List)">getList</A></B>(java.lang.String&nbsp;key,
+        java.util.List&lt;java.lang.Object&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Object&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getLong(java.lang.String)">getLong</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Long</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getLong(java.lang.String, java.lang.Long)">getLong</A></B>(java.lang.String&nbsp;key,
+        java.lang.Long&nbsp;defaultLong)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Long</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getLongList(java.lang.String)">getLongList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getLongList(java.lang.String, java.util.List)">getLongList</A></B>(java.lang.String&nbsp;key,
+            java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getMilliseconds(java.lang.String)">getMilliseconds</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Milliseconds</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getMilliseconds(java.lang.String, java.lang.Long)">getMilliseconds</A></B>(java.lang.String&nbsp;key,
+                java.lang.Long&nbsp;defaultMilliseconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Milliseconds</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getMillisecondsList(java.lang.String)">getMillisecondsList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Milliseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getMillisecondsList(java.lang.String, java.util.List)">getMillisecondsList</A></B>(java.lang.String&nbsp;key,
+                    java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Milliseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNanoseconds(java.lang.String)">getNanoseconds</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Nanoseconds</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNanoseconds(java.lang.String, java.lang.Long)">getNanoseconds</A></B>(java.lang.String&nbsp;key,
+               java.lang.Long&nbsp;defaultNanoseconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Nanoseconds</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNanosecondsList(java.lang.String)">getNanosecondsList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Nanoseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Long&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNanosecondsList(java.lang.String, java.util.List)">getNanosecondsList</A></B>(java.lang.String&nbsp;key,
+                   java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Nanoseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Number</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNumber(java.lang.String)">getNumber</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Number</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Number</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNumber(java.lang.String, java.lang.Number)">getNumber</A></B>(java.lang.String&nbsp;key,
+          java.lang.Number&nbsp;defaultNumber)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as an <code>Number</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Number&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNumberList(java.lang.String)">getNumberList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.Number&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getNumberList(java.lang.String, java.util.List)">getNumberList</A></B>(java.lang.String&nbsp;key,
+              java.util.List&lt;java.lang.Number&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Object</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getObject(java.lang.String)">getObject</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Object</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Object</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getObject(java.lang.String, java.lang.Object)">getObject</A></B>(java.lang.String&nbsp;key,
+          java.lang.Object&nbsp;defaultObject)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>Object</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getObjectList(java.lang.String)">getObjectList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Map&lt;String, Object&gt;&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getObjectList(java.lang.String, java.util.List)">getObjectList</A></B>(java.lang.String&nbsp;key,
+              java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Map&lt;String, Object&gt;&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getString(java.lang.String)">getString</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>String</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getString(java.lang.String, java.lang.String)">getString</A></B>(java.lang.String&nbsp;key,
+          java.lang.String&nbsp;defaultString)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>String</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getStringList(java.lang.String)">getStringList</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;String&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getStringList(java.lang.String, java.util.List)">getStringList</A></B>(java.lang.String&nbsp;key,
+              java.util.List&lt;java.lang.String&gt;&nbsp;defaultList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;play.api.Configuration</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#getWrappedConfiguration()">getWrappedConfiguration</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Set&lt;java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#keys()">keys</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves the set of keys available in this configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.RuntimeException</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#reportError(java.lang.String, java.lang.String, java.lang.Throwable)">reportError</A></B>(java.lang.String&nbsp;key,
+            java.lang.String&nbsp;message,
+            java.lang.Throwable&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a configuration error for a specific configuration key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../play/Configuration.html" title="class in play">Configuration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#root()">root</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The root configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Set&lt;java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#subKeys()">subKeys</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves the set of direct sub-keys available in this configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.typesafe.config.Config</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../play/Configuration.html#underlying()">underlying</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the underlying Typesafe config object.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Configuration(com.typesafe.config.Config)"><!-- --></A><H3>
+Configuration</H3>
+<PRE>
+public <B>Configuration</B>(com.typesafe.config.Config&nbsp;conf)</PRE>
+<DL>
+<DD>Creates a new configuration from a Typesafe Config object.
+<P>
+</DL>
+<HR>
+
+<A NAME="Configuration(play.api.Configuration)"><!-- --></A><H3>
+Configuration</H3>
+<PRE>
+public <B>Configuration</B>(play.api.Configuration&nbsp;conf)</PRE>
+<DL>
+<DD>Creates a new configuration from a Scala-based configuration.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="root()"><!-- --></A><H3>
+root</H3>
+<PRE>
+public static <A HREF="../play/Configuration.html" title="class in play">Configuration</A> <B>root</B>()</PRE>
+<DL>
+<DD>The root configuration.
+ <p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a Configuration instance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConfig(java.lang.String)"><!-- --></A><H3>
+getConfig</H3>
+<PRE>
+public <A HREF="../play/Configuration.html" title="class in play">Configuration</A> <B>getConfig</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a sub-configuration, which is a configuration instance containing all keys that start with the given prefix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - The root prefix for this sub configuration.
+<DT><B>Returns:</B><DD>Maybe a new configuration</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getString(java.lang.String)"><!-- --></A><H3>
+getString</H3>
+<PRE>
+public java.lang.String <B>getString</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>String</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getString(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getString</H3>
+<PRE>
+public java.lang.String <B>getString</B>(java.lang.String&nbsp;key,
+                                  java.lang.String&nbsp;defaultString)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>String</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultString</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultString</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMilliseconds(java.lang.String)"><!-- --></A><H3>
+getMilliseconds</H3>
+<PRE>
+public java.lang.Long <B>getMilliseconds</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Milliseconds</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMilliseconds(java.lang.String, java.lang.Long)"><!-- --></A><H3>
+getMilliseconds</H3>
+<PRE>
+public java.lang.Long <B>getMilliseconds</B>(java.lang.String&nbsp;key,
+                                      java.lang.Long&nbsp;defaultMilliseconds)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Milliseconds</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultMilliseconds</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultMilliseconds</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNanoseconds(java.lang.String)"><!-- --></A><H3>
+getNanoseconds</H3>
+<PRE>
+public java.lang.Long <B>getNanoseconds</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Nanoseconds</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNanoseconds(java.lang.String, java.lang.Long)"><!-- --></A><H3>
+getNanoseconds</H3>
+<PRE>
+public java.lang.Long <B>getNanoseconds</B>(java.lang.String&nbsp;key,
+                                     java.lang.Long&nbsp;defaultNanoseconds)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Nanoseconds</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultNanoseconds</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultMilliseconds</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBytes(java.lang.String)"><!-- --></A><H3>
+getBytes</H3>
+<PRE>
+public java.lang.Long <B>getBytes</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Bytes</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBytes(java.lang.String, java.lang.Long)"><!-- --></A><H3>
+getBytes</H3>
+<PRE>
+public java.lang.Long <B>getBytes</B>(java.lang.String&nbsp;key,
+                               java.lang.Long&nbsp;defaultBytes)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Bytes</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultBytes</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultBytes</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDouble(java.lang.String)"><!-- --></A><H3>
+getDouble</H3>
+<PRE>
+public java.lang.Double <B>getDouble</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Double</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDouble(java.lang.String, java.lang.Double)"><!-- --></A><H3>
+getDouble</H3>
+<PRE>
+public java.lang.Double <B>getDouble</B>(java.lang.String&nbsp;key,
+                                  java.lang.Double&nbsp;defaultDouble)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Double</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultDouble</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultInteger</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInt(java.lang.String)"><!-- --></A><H3>
+getInt</H3>
+<PRE>
+public java.lang.Integer <B>getInt</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Int</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInt(java.lang.String, java.lang.Integer)"><!-- --></A><H3>
+getInt</H3>
+<PRE>
+public java.lang.Integer <B>getInt</B>(java.lang.String&nbsp;key,
+                                java.lang.Integer&nbsp;defaultInteger)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Int</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultInteger</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultInteger</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLong(java.lang.String)"><!-- --></A><H3>
+getLong</H3>
+<PRE>
+public java.lang.Long <B>getLong</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Long</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLong(java.lang.String, java.lang.Long)"><!-- --></A><H3>
+getLong</H3>
+<PRE>
+public java.lang.Long <B>getLong</B>(java.lang.String&nbsp;key,
+                              java.lang.Long&nbsp;defaultLong)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Long</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultLong</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultInteger</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumber(java.lang.String)"><!-- --></A><H3>
+getNumber</H3>
+<PRE>
+public java.lang.Number <B>getNumber</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Number</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumber(java.lang.String, java.lang.Number)"><!-- --></A><H3>
+getNumber</H3>
+<PRE>
+public java.lang.Number <B>getNumber</B>(java.lang.String&nbsp;key,
+                                  java.lang.Number&nbsp;defaultNumber)</PRE>
+<DL>
+<DD>Retrieves a configuration value as an <code>Number</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultNumber</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultInteger</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBoolean(java.lang.String)"><!-- --></A><H3>
+getBoolean</H3>
+<PRE>
+public java.lang.Boolean <B>getBoolean</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Boolean</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBoolean(java.lang.String, java.lang.Boolean)"><!-- --></A><H3>
+getBoolean</H3>
+<PRE>
+public java.lang.Boolean <B>getBoolean</B>(java.lang.String&nbsp;key,
+                                    java.lang.Boolean&nbsp;defaultBoolean)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Boolean</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultBoolean</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultBoolean</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="keys()"><!-- --></A><H3>
+keys</H3>
+<PRE>
+public java.util.Set&lt;java.lang.String&gt; <B>keys</B>()</PRE>
+<DL>
+<DD>Retrieves the set of keys available in this configuration.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the set of keys available in this configuration</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subKeys()"><!-- --></A><H3>
+subKeys</H3>
+<PRE>
+public java.util.Set&lt;java.lang.String&gt; <B>subKeys</B>()</PRE>
+<DL>
+<DD>Retrieves the set of direct sub-keys available in this configuration.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the set of direct sub-keys available in this configuration</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="asMap()"><!-- --></A><H3>
+asMap</H3>
+<PRE>
+public java.util.Map&lt;java.lang.String,java.lang.Object&gt; <B>asMap</B>()</PRE>
+<DL>
+<DD>Returns the config as a map of plain old Java maps, lists and values.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The config map</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="underlying()"><!-- --></A><H3>
+underlying</H3>
+<PRE>
+public com.typesafe.config.Config <B>underlying</B>()</PRE>
+<DL>
+<DD>Returns the underlying Typesafe config object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The config</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="entrySet()"><!-- --></A><H3>
+entrySet</H3>
+<PRE>
+public java.util.Set&lt;java.util.Map.Entry&lt;java.lang.String,com.typesafe.config.ConfigValue&gt;&gt; <B>entrySet</B>()</PRE>
+<DL>
+<DD>Returns the config as a set of full paths to config values.  This is
+ different to <A HREF="../play/Configuration.html#asMap()"><CODE>asMap()</CODE></A> in that it returns <CODE>ConfigValue</CODE>
+ objects, and keys are recursively expanded to be pull path keys.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The config as an entry set</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reportError(java.lang.String, java.lang.String, java.lang.Throwable)"><!-- --></A><H3>
+reportError</H3>
+<PRE>
+public java.lang.RuntimeException <B>reportError</B>(java.lang.String&nbsp;key,
+                                              java.lang.String&nbsp;message,
+                                              java.lang.Throwable&nbsp;e)</PRE>
+<DL>
+<DD>Creates a configuration error for a specific configuration key.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the configuration key, related to this error<DD><CODE>message</CODE> - the error message<DD><CODE>e</CODE> - the optional related exception
+<DT><B>Returns:</B><DD>a configuration exception</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBooleanList(java.lang.String)"><!-- --></A><H3>
+getBooleanList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Boolean&gt; <B>getBooleanList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Boolean&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBooleanList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getBooleanList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Boolean&gt; <B>getBooleanList</B>(java.lang.String&nbsp;key,
+                                                        java.util.List&lt;java.lang.Boolean&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Boolean&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBytesList(java.lang.String)"><!-- --></A><H3>
+getBytesList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getBytesList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBytesList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getBytesList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getBytesList</B>(java.lang.String&nbsp;key,
+                                                   java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConfigList(java.lang.String)"><!-- --></A><H3>
+getConfigList</H3>
+<PRE>
+public java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt; <B>getConfigList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Configuration&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConfigList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getConfigList</H3>
+<PRE>
+public java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt; <B>getConfigList</B>(java.lang.String&nbsp;key,
+                                                   java.util.List&lt;<A HREF="../play/Configuration.html" title="class in play">Configuration</A>&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Configuration&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDoubleList(java.lang.String)"><!-- --></A><H3>
+getDoubleList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Double&gt; <B>getDoubleList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Double&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDoubleList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getDoubleList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Double&gt; <B>getDoubleList</B>(java.lang.String&nbsp;key,
+                                                      java.util.List&lt;java.lang.Double&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Double&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIntList(java.lang.String)"><!-- --></A><H3>
+getIntList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Integer&gt; <B>getIntList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Integer&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIntList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getIntList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Integer&gt; <B>getIntList</B>(java.lang.String&nbsp;key,
+                                                    java.util.List&lt;java.lang.Integer&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Integer&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getList(java.lang.String)"><!-- --></A><H3>
+getList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Object&gt; <B>getList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Object&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Object&gt; <B>getList</B>(java.lang.String&nbsp;key,
+                                                java.util.List&lt;java.lang.Object&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Object&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLongList(java.lang.String)"><!-- --></A><H3>
+getLongList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getLongList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLongList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getLongList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getLongList</B>(java.lang.String&nbsp;key,
+                                                  java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMillisecondsList(java.lang.String)"><!-- --></A><H3>
+getMillisecondsList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getMillisecondsList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Milliseconds.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMillisecondsList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getMillisecondsList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getMillisecondsList</B>(java.lang.String&nbsp;key,
+                                                          java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Milliseconds.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNanosecondsList(java.lang.String)"><!-- --></A><H3>
+getNanosecondsList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getNanosecondsList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Nanoseconds.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNanosecondsList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getNanosecondsList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Long&gt; <B>getNanosecondsList</B>(java.lang.String&nbsp;key,
+                                                         java.util.List&lt;java.lang.Long&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Long&gt;</code> representing Nanoseconds.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumberList(java.lang.String)"><!-- --></A><H3>
+getNumberList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Number&gt; <B>getNumberList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumberList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getNumberList</H3>
+<PRE>
+public java.util.List&lt;java.lang.Number&gt; <B>getNumberList</B>(java.lang.String&nbsp;key,
+                                                      java.util.List&lt;java.lang.Number&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObjectList(java.lang.String)"><!-- --></A><H3>
+getObjectList</H3>
+<PRE>
+public java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt; <B>getObjectList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Map&lt;String, Object&gt;&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObjectList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getObjectList</H3>
+<PRE>
+public java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt; <B>getObjectList</B>(java.lang.String&nbsp;key,
+                                                                                      java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Map&lt;String, Object&gt;&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStringList(java.lang.String)"><!-- --></A><H3>
+getStringList</H3>
+<PRE>
+public java.util.List&lt;java.lang.String&gt; <B>getStringList</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;String&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStringList(java.lang.String, java.util.List)"><!-- --></A><H3>
+getStringList</H3>
+<PRE>
+public java.util.List&lt;java.lang.String&gt; <B>getStringList</B>(java.lang.String&nbsp;key,
+                                                      java.util.List&lt;java.lang.String&gt;&nbsp;defaultList)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>List&lt;Number&gt;</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultList</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObject(java.lang.String)"><!-- --></A><H3>
+getObject</H3>
+<PRE>
+public java.lang.Object <B>getObject</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Object</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)
+<DT><B>Returns:</B><DD>a configuration value or <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObject(java.lang.String, java.lang.Object)"><!-- --></A><H3>
+getObject</H3>
+<PRE>
+public java.lang.Object <B>getObject</B>(java.lang.String&nbsp;key,
+                                  java.lang.Object&nbsp;defaultObject)</PRE>
+<DL>
+<DD>Retrieves a configuration value as a <code>Object</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - configuration key (relative to configuration root key)<DD><CODE>defaultObject</CODE> - default value if configuration key doesn't exist
+<DT><B>Returns:</B><DD>a configuration value or the defaultList</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWrappedConfiguration()"><!-- --></A><H3>
+getWrappedConfiguration</H3>
+<PRE>
+public play.api.Configuration <B>getWrappedConfiguration</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../play/Application.html" title="class in play"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../play/GlobalSettings.html" title="class in play"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?play/Configuration.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Configuration.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

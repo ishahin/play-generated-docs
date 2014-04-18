@@ -2,17 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>WithServer - play.api.test.WithServer</title>
-          <meta name="description" content="WithServer - play.api.test.WithServer" />
-          <meta name="keywords" content="WithServer play.api.test.WithServer" />
+          <title>NettyFuture - play.core.server.netty.NettyFuture</title>
+          <meta name="description" content="NettyFuture - play.core.server.netty.NettyFuture" />
+          <meta name="keywords" content="NettyFuture play.core.server.netty.NettyFuture" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
       <script type="text/javascript">
          if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'play.api.test.WithServer';
+            var url = '../../../../index.html';
+            var hash = 'play.core.server.netty.NettyFuture$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -22,27 +22,27 @@
    	  </script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <img src="../../../lib/class_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="play">play</a>.<a href="../package.html" class="extype" name="play.api">api</a>.<a href="package.html" class="extype" name="play.api.test">test</a></p>
-        <h1>WithServer</h1>
+        <img src="../../../../lib/object_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="play">play</a>.<a href="../../package.html" class="extype" name="play.core">core</a>.<a href="../package.html" class="extype" name="play.core.server">server</a>.<a href="package.html" class="extype" name="play.core.server.netty">netty</a></p>
+        <h1>NettyFuture</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">WithServer</span><span class="result"> extends <span class="extype" name="org.specs2.mutable.Around">Around</span> with <span class="extype" name="org.specs2.specification.Scope">Scope</span></span>
+        <span class="name">NettyFuture</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Used to run specs within the context of a running server.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/playframework/playframework/tree/2.2.x/framework/src/play-test/src/main/scala/play/api/test/Specs.scala" target="_blank">Specs.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Allows a NettyFuture to be convert to a Scala Future
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/playframework/playframework/tree/2.2.x/framework/src/play/src/main/scala/play/core/server/netty/NettyFuture.scala" target="_blank">NettyFuture.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="org.specs2.mutable.Around">Around</span>, <span class="extype" name="scala.DelayedInit">DelayedInit</span>, <span class="extype" name="org.specs2.specification.Around">Around</span>, <span class="extype" name="org.specs2.specification.Context">Context</span>, <span class="extype" name="org.specs2.specification.Scope">Scope</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -60,7 +60,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="play.api.test.WithServer"><span>WithServer</span></li><li class="in" name="org.specs2.mutable.Around"><span>Around</span></li><li class="in" name="scala.DelayedInit"><span>DelayedInit</span></li><li class="in" name="org.specs2.specification.Around"><span>Around</span></li><li class="in" name="org.specs2.specification.Context"><span>Context</span></li><li class="in" name="org.specs2.specification.Scope"><span>Scope</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="play.core.server.netty.NettyFuture"><span>NettyFuture</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -78,26 +78,25 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="play.api.test.WithServer#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(app:play.api.test.FakeApplication,port:Int):play.api.test.WithServer"></a>
-      <a id="&lt;init&gt;:WithServer"></a>
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="play.core.server.netty.NettyFuture.ToScala" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ToScalaextendsAnyRef"></a>
+      <a id="ToScala:ToScala"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">WithServer</span><span class="params">(<span name="app">app: <a href="FakeApplication.html" class="extype" name="play.api.test.FakeApplication">FakeApplication</a> = <span class="defval" name="FakeApplication.apply(FakeApplication.apply$default$1, FakeApplication.apply$default$2, FakeApplication.apply$default$3, FakeApplication.apply$default$4, FakeApplication.apply$default$5, FakeApplication.apply$default$6, FakeApplication.apply$default$7)">...</span></span>, <span name="port">port: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">Helpers.testServerPort</span></span>)</span>
+        <a href="NettyFuture$$ToScala.html"><span class="name">ToScala</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">app</dt><dd class="cmt"><p>The fake application</p></dd><dt class="param">port</dt><dd class="cmt"><p>The port to run the server on
-</p></dd></dl></div>
+      
     </li></ol>
             </div>
-
-        
 
         
 
@@ -168,58 +167,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.specs2.specification.Around#andThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="andThen(a:org.specs2.specification.Around):org.specs2.specification.Around"></a>
-      <a id="andThen(Around):Around"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">andThen</span><span class="params">(<span name="a">a: <span class="extype" name="org.specs2.specification.Around">Around</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.specification.Around">Around</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Around</dd></dl></div>
-    </li><li name="play.api.test.WithServer#app" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="app:play.api.test.FakeApplication"></a>
-      <a id="app:FakeApplication"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">app</span><span class="result">: <a href="FakeApplication.html" class="extype" name="play.api.test.FakeApplication">FakeApplication</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The fake application</p>
-    </li><li name="org.specs2.specification.Around#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="apply[T](a:=&gt;T)(implicitevidence$2:org.specs2.execute.AsResult[T]):org.specs2.execute.Result"></a>
-      <a id="apply[T](⇒T)(AsResult[T]):Result"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="a">a: ⇒ <span class="extype" name="org.specs2.specification.Around.apply.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="org.specs2.execute.AsResult">AsResult</span>[<span class="extype" name="org.specs2.specification.Around.apply.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Result">Result</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Around → Context</dd></dl></div>
-    </li><li name="play.api.test.WithServer#around" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="around[T](t:=&gt;T)(implicitevidence$2:org.specs2.execute.AsResult[T]):org.specs2.execute.Result"></a>
-      <a id="around[T](⇒T)(AsResult[T]):Result"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">around</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: ⇒ <span class="extype" name="play.api.test.WithServer.around.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="org.specs2.execute.AsResult">AsResult</span>[<span class="extype" name="play.api.test.WithServer.around.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Result">Result</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="play.api.test.WithServer">WithServer</a> → Around</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -245,39 +192,13 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.specs2.specification.Around#compose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="compose(a:org.specs2.specification.Around):org.specs2.specification.Around"></a>
-      <a id="compose(Around):Around"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">compose</span><span class="params">(<span name="a">a: <span class="extype" name="org.specs2.specification.Around">Around</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.specification.Around">Around</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Around</dd></dl></div>
-    </li><li name="org.specs2.mutable.Around#delayedInit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="delayedInit(x:=&gt;Unit):Unit"></a>
-      <a id="delayedInit(⇒Unit):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">delayedInit</span><span class="params">(<span name="x">x: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Around → DelayedInit</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -316,7 +237,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
@@ -349,32 +270,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="play.api.test.WithServer#implicitApp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="implicitApp:play.api.test.FakeApplication"></a>
-      <a id="implicitApp:FakeApplication"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">implicitApp</span><span class="result">: <a href="FakeApplication.html" class="extype" name="play.api.test.FakeApplication">FakeApplication</a></span>
-      </span>
-      </h4>
-      
-    </li><li name="play.api.test.WithServer#implicitPort" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="implicitPort:play.api.test.Port"></a>
-      <a id="implicitPort:Port"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">implicitPort</span><span class="result">: <a href="package.html#Port=Int" class="extmbr" name="play.api.test.Port">Port</a></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -427,20 +322,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="play.api.test.WithServer#port" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="port:Int"></a>
-      <a id="port:Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">port</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">The port to run the server on
-</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -533,17 +414,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.specs2.mutable.Around">
-              <h3>Inherited from <span class="extype" name="org.specs2.mutable.Around">Around</span></h3>
-            </div><div class="parent" name="scala.DelayedInit">
-              <h3>Inherited from <span class="extype" name="scala.DelayedInit">DelayedInit</span></h3>
-            </div><div class="parent" name="org.specs2.specification.Around">
-              <h3>Inherited from <span class="extype" name="org.specs2.specification.Around">Around</span></h3>
-            </div><div class="parent" name="org.specs2.specification.Context">
-              <h3>Inherited from <span class="extype" name="org.specs2.specification.Context">Context</span></h3>
-            </div><div class="parent" name="org.specs2.specification.Scope">
-              <h3>Inherited from <span class="extype" name="org.specs2.specification.Scope">Scope</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
@@ -563,6 +434,6 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
     </body>
       </html>

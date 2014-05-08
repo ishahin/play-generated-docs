@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>ServerSSLContext - play.core.server.ServerSSLContext</title>
-          <meta name="description" content="ServerSSLContext - play.core.server.ServerSSLContext" />
-          <meta name="keywords" content="ServerSSLContext play.core.server.ServerSSLContext" />
+          <title>ServerSSLEngine - play.core.server.ServerSSLEngine</title>
+          <meta name="description" content="ServerSSLEngine - play.core.server.ServerSSLEngine" />
+          <meta name="keywords" content="ServerSSLEngine play.core.server.ServerSSLEngine" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'play.core.server.ServerSSLContext$';
+            var hash = 'play.core.server.ServerSSLEngine$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,7 +26,7 @@
       <div id="definition">
         <img src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="play">play</a>.<a href="../package.html" class="extype" name="play.core">core</a>.<a href="package.html" class="extype" name="play.core.server">server</a></p>
-        <h1>ServerSSLContext</h1>
+        <h1>ServerSSLEngine</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,11 +35,26 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ServerSSLContext</span>
+        <span class="name">ServerSSLEngine</span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/playframework/playframework/tree/master/framework/src/play/src/main/scala/play/core/server/ServerSSLContext.scala" target="_blank">ServerSSLContext.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This singleton object looks for a class of {{play.server.api.SSLEngineProvider}} or {{play.server.SSLEngineProvider}}
+in the system property 
+<pre>
+play.http.sslengineprovider
+</pre>
+.  if there is no instance found, it uses
+DefaultSSLEngineProvider.</p><p>If the class of {{SSLEngineProvider}} defined has a constructor with {{play.core.ApplicationProvider}} (for Scala) or
+{{play.server.ApplicationProvider}} (for Java), then an application provider is passed in when a new instance of the
+class is created.</p><p>play.http.sslengineprovider
+</pre>
+DefaultSSLEngineProvider.
+
+If the class of {{SSLEngineProvider}} defined has a constructor with {{play.core.ApplicationProvider}} (for Scala) or
+{{play.server.ApplicationProvider}} (for Java), then an application provider is passed in when a new instance of the
+class is created.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/playframework/playframework/tree/master/framework/src/play/src/main/scala/play/core/server/ServerSSLEngine.scala" target="_blank">ServerSSLEngine.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -59,7 +74,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="play.core.server.ServerSSLContext"><span>ServerSSLContext</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="play.core.server.ServerSSLEngine"><span>ServerSSLEngine</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -182,6 +197,19 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="play.core.server.ServerSSLEngine#createSSLEngineProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createSSLEngineProvider(applicationProvider:play.core.ApplicationProvider):play.server.SSLEngineProvider"></a>
+      <a id="createSSLEngineProvider(ApplicationProvider):SSLEngineProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createSSLEngineProvider</span><span class="params">(<span name="applicationProvider">applicationProvider: <a href="../ApplicationProvider.html" class="extype" name="play.core.ApplicationProvider">ApplicationProvider</a></span>)</span><span class="result">: <span class="extype" name="play.server.SSLEngineProvider">SSLEngineProvider</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -266,19 +294,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="play.core.server.ServerSSLContext#loadSSLContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="loadSSLContext(applicationProvider:play.core.ApplicationProvider):javax.net.ssl.SSLContext"></a>
-      <a id="loadSSLContext(ApplicationProvider):SSLContext"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">loadSSLContext</span><span class="params">(<span name="applicationProvider">applicationProvider: <a href="../ApplicationProvider.html" class="extype" name="play.core.ApplicationProvider">ApplicationProvider</a></span>)</span><span class="result">: <span class="extype" name="javax.net.ssl.SSLContext">SSLContext</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

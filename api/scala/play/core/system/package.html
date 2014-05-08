@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>api - play.server.api</title>
-          <meta name="description" content="api - play.server.api" />
-          <meta name="keywords" content="api play.server.api" />
+          <title>system - play.core.system</title>
+          <meta name="description" content="system - play.core.system" />
+          <meta name="keywords" content="system play.core.system" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
-            var hash = 'play.server.api.package';
+            var hash = 'play.core.system.package';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -25,8 +25,8 @@
         <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="play">play</a>.<a href="../package.html" class="extype" name="play.server">server</a></p>
-        <h1>api</h1>
+        <p id="owner"><a href="../../package.html" class="extype" name="play">play</a>.<a href="../package.html" class="extype" name="play.core">core</a></p>
+        <h1>system</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,7 +35,7 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <span class="name">api</span>
+        <span class="name">system</span>
       </span>
       </h4>
       
@@ -58,19 +58,20 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="play.server.api.SSLEngineProvider" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SSLEngineProviderextendsSSLEngineProvider"></a>
-      <a id="SSLEngineProvider:SSLEngineProvider"></a>
+              <ol><li name="play.core.system.MigrationHelper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MigrationHelperextendsPlugin"></a>
+      <a id="MigrationHelper:MigrationHelper"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SSLEngineProvider.html"><span class="name">SSLEngineProvider</span></a><span class="result"> extends <span class="extype" name="play.server.SSLEngineProvider">server.SSLEngineProvider</span></span>
+        <a href="MigrationHelper.html"><span class="name">MigrationHelper</span></a><span class="result"> extends <a href="../../api/Plugin.html" class="extype" name="play.api.Plugin">api.Plugin</a></span>
       </span>
       </h4>
-      <p class="comment cmt">To configure the SSLEngine used by Play as a server, extend this class.</p>
+      <p class="comment cmt">The migration helper is designed to assist in migration, where some things, such as configuration, have changed in
+ways that break silently.</p>
     </li></ol>
             </div>
 

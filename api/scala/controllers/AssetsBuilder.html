@@ -2422,19 +2422,19 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="controllers.AssetsBuilder#at" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="at(path:String,file:String):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
-      <a id="at(String,String):Action[AnyContent]"></a>
+      <a id="at(path:String,file:String,aggressiveCaching:Boolean):play.api.mvc.Action[play.api.mvc.AnyContent]"></a>
+      <a id="at(String,String,Boolean):Action[AnyContent]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">at</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="file">file: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../play/api/mvc/Action.html" class="extype" name="play.api.mvc.Action">Action</a>[<a href="../play/api/mvc/AnyContent.html" class="extype" name="play.api.mvc.AnyContent">AnyContent</a>]</span>
+        <span class="name">at</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="file">file: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="aggressiveCaching">aggressiveCaching: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="../play/api/mvc/Action.html" class="extype" name="play.api.mvc.Action">Action</a>[<a href="../play/api/mvc/AnyContent.html" class="extype" name="play.api.mvc.AnyContent">AnyContent</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Generates an <code>Action</code> that serves a static resource.</p><div class="fullcomment"><div class="comment cmt"><p>Generates an <code>Action</code> that serves a static resource.
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the root folder for searching the static resource files, such as <code>&quot;/public&quot;</code>. Not URL encoded.</p></dd><dt class="param">file</dt><dd class="cmt"><p>the file part extracted from the URL. May be URL encoded (note that %2F decodes to literal /).
+</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the root folder for searching the static resource files, such as <code>&quot;/public&quot;</code>. Not URL encoded.</p></dd><dt class="param">file</dt><dd class="cmt"><p>the file part extracted from the URL. May be URL encoded (note that %2F decodes to literal /).</p></dd><dt class="param">aggressiveCaching</dt><dd class="cmt"><p>if true then an aggressive set of caching directives will be used. Defaults to false.
 </p></dd></dl></div>
     </li><li name="play.api.mvc.Results#chunk" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="chunk(trailers:Option[play.api.libs.iteratee.Iteratee[Array[Byte],Seq[(String,String)]]]):play.api.libs.iteratee.Enumeratee[Array[Byte],Array[Byte]]"></a>

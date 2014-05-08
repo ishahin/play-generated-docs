@@ -2,13 +2,13 @@
 <!-- NewPage -->
 <html lang="en">
 <head>
-<title>SSLContextProvider (Play 2.3-SNAPSHOT)</title>
+<title>SSLEngineProvider (Play 2.3-SNAPSHOT)</title>
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 </head>
 <body>
 <script type="text/javascript"><!--
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="SSLContextProvider (Play 2.3-SNAPSHOT)";
+        parent.document.title="SSLEngineProvider (Play 2.3-SNAPSHOT)";
     }
 //-->
 </script>
@@ -33,12 +33,12 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../play/server/ApplicationProvider.html" title="class in play.server"><span class="strong">Prev Class</span></a></li>
-<li><a href="../../play/server/SSLEngineProvider.html" title="interface in play.server"><span class="strong">Next Class</span></a></li>
+<li><a href="../../play/server/SSLContextProvider.html" title="interface in play.server"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
 </ul>
 <ul class="navList">
-<li><a href="../../index.html?play/server/SSLContextProvider.html" target="_top">Frames</a></li>
-<li><a href="SSLContextProvider.html" target="_top">No Frames</a></li>
+<li><a href="../../index.html?play/server/SSLEngineProvider.html" target="_top">Frames</a></li>
+<li><a href="SSLEngineProvider.html" target="_top">No Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
 <li><a href="../../allclasses-noframe.html">All Classes</a></li>
@@ -77,7 +77,7 @@
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">play.server</div>
-<h2 title="Interface SSLContextProvider" class="title">Interface SSLContextProvider</h2>
+<h2 title="Interface SSLEngineProvider" class="title">Interface SSLEngineProvider</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -85,10 +85,7 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>public interface <span class="strong">SSLContextProvider</span></pre>
-<div class="block">To listen on HTTPS port, play needs a SSL context.
- If you want specify your own SSL context, define a class implementing this interface.
- The path to this class should be configured with the system property <pre>play.http.sslcontextprovider</pre></div>
+<pre>public interface <span class="strong">SSLEngineProvider</span></pre>
 </li>
 </ul>
 </div>
@@ -108,8 +105,8 @@
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>javax.net.ssl.SSLContext</code></td>
-<td class="colLast"><code><strong><a href="../../play/server/SSLContextProvider.html#createSSLContext(play.server.ApplicationProvider)">createSSLContext</a></strong>(<a href="../../play/server/ApplicationProvider.html" title="class in play.server">ApplicationProvider</a>&nbsp;applicationProvider)</code>&nbsp;</td>
+<td class="colFirst"><code>javax.net.ssl.SSLEngine</code></td>
+<td class="colLast"><code><strong><a href="../../play/server/SSLEngineProvider.html#createSSLEngine()">createSSLEngine</a></strong>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -126,14 +123,14 @@
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="createSSLContext(play.server.ApplicationProvider)">
+<a name="createSSLEngine()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>createSSLContext</h4>
-<pre>javax.net.ssl.SSLContext&nbsp;createSSLContext(<a href="../../play/server/ApplicationProvider.html" title="class in play.server">ApplicationProvider</a>&nbsp;applicationProvider)</pre>
-<dl><dt><span class="strong">Returns:</span></dt><dd>the SSL context to be used for HTTPS connection.</dd></dl>
+<h4>createSSLEngine</h4>
+<pre>javax.net.ssl.SSLEngine&nbsp;createSSLEngine()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the SSL engine to be used for HTTPS connection.</dd></dl>
 </li>
 </ul>
 </li>
@@ -161,12 +158,12 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../play/server/ApplicationProvider.html" title="class in play.server"><span class="strong">Prev Class</span></a></li>
-<li><a href="../../play/server/SSLEngineProvider.html" title="interface in play.server"><span class="strong">Next Class</span></a></li>
+<li><a href="../../play/server/SSLContextProvider.html" title="interface in play.server"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
 </ul>
 <ul class="navList">
-<li><a href="../../index.html?play/server/SSLContextProvider.html" target="_top">Frames</a></li>
-<li><a href="SSLContextProvider.html" target="_top">No Frames</a></li>
+<li><a href="../../index.html?play/server/SSLEngineProvider.html" target="_top">Frames</a></li>
+<li><a href="SSLEngineProvider.html" target="_top">No Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
 <li><a href="../../allclasses-noframe.html">All Classes</a></li>

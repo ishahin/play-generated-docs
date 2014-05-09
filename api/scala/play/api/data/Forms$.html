@@ -878,6 +878,22 @@ field that must not be empty, even if present in the form.</p><p>Example:</p><pr
 <span class="lit">"name"</span> -&gt; seq(text)
 )</pre></div><dl class="paramcmts block"><dt class="param">mapping</dt><dd class="cmt"><p>The mapping to make repeated.
 </p></dd></dl></div>
+    </li><li name="play.api.data.Forms#set" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set[A](mapping:play.api.data.Mapping[A]):play.api.data.Mapping[Set[A]]"></a>
+      <a id="set[A](Mapping[A]):Mapping[Set[A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="mapping">mapping: <a href="Mapping.html" class="extype" name="play.api.data.Mapping">Mapping</a>[<span class="extype" name="play.api.data.Forms.set.A">A</span>]</span>)</span><span class="result">: <a href="Mapping.html" class="extype" name="play.api.data.Mapping">Mapping</a>[<span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="play.api.data.Forms.set.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Defines a repeated mapping with the Set semantic.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a repeated mapping with the Set semantic.</p><pre>Form(
+<span class="lit">"name"</span> -&gt; set(text)
+)</pre></div><dl class="paramcmts block"><dt class="param">mapping</dt><dd class="cmt"><p>The mapping to make repeated.
+</p></dd></dl></div>
     </li><li name="play.api.data.Forms#single" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="single[A1](a1:(String,play.api.data.Mapping[A1])):play.api.data.Mapping[A1]"></a>
       <a id="single[A1]((String,Mapping[A1])):Mapping[A1]"></a>
